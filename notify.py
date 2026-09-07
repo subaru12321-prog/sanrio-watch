@@ -17,13 +17,27 @@ import urllib.request
 DEFAULT_SERVER = "https://ntfy.sh"
 
 
+# ntfyのJSON APIは priority を 1〜5 の数値で受け取る。文字列を渡すと400になるため、
+# 呼び出し側が名前で書けるようにここで変換する。
+PRIORITY_NAMES = {"min": 1, "low": 2, "default": 3, "high": 4, "urgent": 5, "max": 5}
+
+
+def get_topic():
+    """環境変数からトピック名を取得する。
+
+    GitHub Secretsやシェル経由で末尾に改行が混入すると ntfy が400を返すため、必ず削る。
+    """
+    topic = os.environ.get("NTFY_TOPIC")
+    return topic.strip() if topic else None
+
+
 def is_configured():
-    return bool(os.environ.get("NTFY_TOPIC"))
+    return bool(get_topic())
 
 
 def send(message, title=None, tags=None, priority=None, click=None, timeout=15):
     """1件通知を送る。成功可否をdictで返す（例外は投げない）。"""
-    topic = os.environ.get("NTFY_TOPIC")
+    topic = get_topic()
     if not topic:
         return {"ok": False, "error": "NTFY_TOPIC is not set"}
 
@@ -34,7 +48,7 @@ def send(message, title=None, tags=None, priority=None, click=None, timeout=15):
     if tags:
         payload["tags"] = tags
     if priority:
-        payload["priority"] = priority
+        payload["priority"] = PRIORITY_NAMES.get(priority, priority) if isinstance(priority, str) else priority
     if click:
         payload["click"] = click
 
