@@ -13,17 +13,21 @@
 ## 動く仕組み
 
 ```
-GitHub Actions (毎日 09:00 JST)
+Windowsタスクスケジューラ (毎日 09:00)
    ↓ run_check.py --weekly --notify
    ├─ 各サイトの一覧を取得（fetch_sanrio.py / fetch_munyugurumi.py）
    ├─ state/*.json の既知IDと突き合わせて新規だけ抽出
-   ├─ ntfy.sh 経由でスマホにプッシュ通知
-   └─ state/*.json をリポジトリにコミット（次回の判定材料）
+   └─ ntfy.sh 経由でスマホにプッシュ通知
 ```
 
-**PCの電源が入っていなくても、Claudeが起動していなくても動く。** クラウド(GitHub Actions)で
-完結しているため。取得・差分検知・通知はすべて標準ライブラリだけのPythonスクリプトで、
-LLMは介在しない（＝壊れにくく、実行コストもゼロ）。
+**Claudeが起動していなくても動く。** 取得・差分検知・通知はすべて標準ライブラリだけの
+Pythonスクリプトで完結しており、LLMは介在しない（＝壊れにくく、実行コストもゼロ）。
+
+ただし **PCの電源は入っている必要がある。** クラウド(GitHub Actions)での実行も試したが、
+**監視対象3サイトすべてがGitHub ActionsのIPレンジからのアクセスに403を返す**ため断念した
+（2026-09-07実測。ブラウザ相当のヘッダを付けても変わらないので、UAではなくIPベースの遮断。
+同じスクリプトがローカルPCからは正常に動く）。相手が意図的に設けているアクセス制限なので、
+プロキシ等での迂回はしない方針。`.github/workflows/watch.yml` は手動実行だけ残してある。
 
 例外はGoogleカレンダー登録だけ。OAuthが必要でクラウドから打てないため、**予約商品が
 見つかったときだけ** `calendar_pending` フラグを立てて溜めておき、Claudeが起動している
@@ -49,20 +53,35 @@ python -c "import secrets,string; print('sanrio-watch-' + ''.join(secrets.choice
 > GitHubのSecretにだけ入れる。漏れたと思ったら、新しい名前を生成してアプリの購読とSecretを
 > 差し替えれば無効化できる（アカウントが無いぶん、名前を変えるだけで済む）。
 
-### 2. GitHubにSecretを登録する
+### 2. トピック名をローカルに置く
 
-リポジトリの Settings → Secrets and variables → Actions → New repository secret
+このディレクトリに `ntfy_topic.txt` を作り、トピック名だけを書く（改行や空白が混ざると
+ntfyが400を返すので、スクリプト側で除去している）。このファイルは`.gitignore`済みで
+コミットされない。
 
-| Name | Value |
-|---|---|
-| `NTFY_TOPIC` | 上記のトピック名 |
+```bash
+echo -n "あなたのトピック名" > ntfy_topic.txt
+```
 
-Secretを入れないと、ワークフローは動くが通知だけ飛ばない（`NTFY_TOPIC is not set` として結果に出る）。
+環境変数 `NTFY_TOPIC` があればそちらが優先される（GitHub Actions用）。
 
-### 3. 動作確認
+### 3. タスクスケジューラに登録する
 
-リポジトリの Actions タブ → "watch" → "Run workflow" で手動実行できる。
-スマホに通知が届くか確認する（新商品が無い日は、月曜以外は通知が飛ばないのが正常）。
+毎日1回 `run_check.py --weekly --notify` を実行するよう登録する。登録済みなら:
+
+```powershell
+schtasks /query /tn "sanrio-watch"      # 確認
+schtasks /run /tn "sanrio-watch"        # 手動実行
+schtasks /change /tn "sanrio-watch" /disable   # 一時停止
+```
+
+### 4. 動作確認
+
+```bash
+python notify.py "テスト"
+```
+
+スマホに届けば設定完了。新商品が無い日は通知が飛ばないのが正常（月曜だけ週次サマリが届く）。
 
 ## ローカルで手動実行する
 

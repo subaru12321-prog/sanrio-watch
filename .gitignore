@@ -5,3 +5,4 @@ calendar_done.json
 __pycache__/
 *.pyc
 .env
+ntfy_topic.txt

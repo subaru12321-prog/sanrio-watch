@@ -22,13 +22,27 @@ DEFAULT_SERVER = "https://ntfy.sh"
 PRIORITY_NAMES = {"min": 1, "low": 2, "default": 3, "high": 4, "urgent": 5, "max": 5}
 
 
-def get_topic():
-    """環境変数からトピック名を取得する。
+TOPIC_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ntfy_topic.txt")
 
-    GitHub Secretsやシェル経由で末尾に改行が混入すると ntfy が400を返すため、必ず削る。
+
+def get_topic():
+    """トピック名を取得する。環境変数 → ローカルファイル の順で探す。
+
+    - GitHub Actions では Secrets から環境変数で渡す。
+    - Windowsタスクスケジューラからの実行では環境変数を引き継ぎにくいので、
+      ローカルの ntfy_topic.txt（.gitignore済み）を読む。
+    どちらも末尾の改行・空白が混入すると ntfy が400を返すため、必ず削る。
     """
     topic = os.environ.get("NTFY_TOPIC")
-    return topic.strip() if topic else None
+    if topic and topic.strip():
+        return topic.strip()
+
+    try:
+        with open(TOPIC_FILE, encoding="utf-8") as f:
+            content = f.read().strip()
+            return content or None
+    except OSError:
+        return None
 
 
 def is_configured():
