@@ -127,9 +127,13 @@ def check_character(char_cfg, today_iso, today, weekly):
         result["error"] = f"unknown site: {site}"
         return result
 
-    fetch_result = module.run_listing(
-        char_cfg["lookup_mode"], char_cfg["lookup_value"], 30
-    )
+    # 1サイトの失敗が他のキャラクターのチェックまで巻き込まないよう、ここで必ず捕まえる
+    try:
+        fetch_result = module.run_listing(
+            char_cfg["lookup_mode"], char_cfg["lookup_value"], 30
+        )
+    except Exception as e:  # noqa: BLE001
+        fetch_result = {"ok": False, "error": f"{type(e).__name__}: {e}"}
 
     if not fetch_result.get("ok"):
         result["status"] = "fetch_error"
