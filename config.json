@@ -1,0 +1,31 @@
+{
+  "characters": [
+    {
+      "key": "keroppi",
+      "display_name": "けろっぴ（サンリオ公式ショップ）",
+      "enabled": true,
+      "site": "sanrio_shop",
+      "lookup_mode": "character_id",
+      "lookup_value": "7",
+      "note": "character_id=7 = けろっぴ本人(KR.pngアイコンで目視確認済み)。フィルタが確実に効く。"
+    },
+    {
+      "key": "monkichi",
+      "display_name": "おさるのもんきち（サンリオ公式ショップ）",
+      "enabled": true,
+      "site": "sanrio_shop",
+      "lookup_mode": "character_id",
+      "lookup_value": "30",
+      "note": "character_id=30 = おさるのもんきち。サイトのキャラ選択カルーセル(人気35キャラ)には表示されないがURLパラメータとしては有効で、ページタイトルでも本人と確認済み(2026-08-31)。現状ヒットするのは『サンリオキャラクターズ 人生ゲーム』のみ(複数キャラ収録商品)。"
+    },
+    {
+      "key": "keroppi_munyugurumi",
+      "display_name": "けろっぴ（むにゅぐるみパティオ）",
+      "enabled": true,
+      "site": "munyugurumi",
+      "lookup_mode": "character_code",
+      "lookup_value": "KR",
+      "note": "けろっぴ専門プラッシュ小売店。character=KRで36件ヒット(2026-08-31時点、新着順)。サンリオ公式とは別在庫・別デザインのグッズが多い。予約商品は商品名に【予約販売】【○月上旬頃発送予定】等が埋め込まれる方式で、fetch_munyugurumi.py側で名前から直接判定・日付推定するため詳細ページの追加取得は不要。"
+    }
+  ]
+}

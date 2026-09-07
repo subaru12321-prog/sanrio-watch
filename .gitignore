@@ -1,0 +1,7 @@
+# Claude側(ローカル)だけが使う、カレンダー登録済み台帳。
+# クラウド側とのgit競合を避けるため、意図的にコミットしない。
+calendar_done.json
+
+__pycache__/
+*.pyc
+.env

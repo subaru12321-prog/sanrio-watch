@@ -1,0 +1,88 @@
+{
+  "baseline_established": true,
+  "seen": {
+    "1_1_2608551783": {
+      "first_seen": "2026-08-31",
+      "name": "サンリオキャラクターズ アクリルスタンド（ファンシーキャラMIX）",
+      "price": 1760,
+      "url": "https://shop.sanrio.co.jp/item/detail/1_1_2608551783_1/MX_-/-",
+      "calendar_event_id": null,
+      "from_baseline": true
+    },
+    "1_1_2608872997": {
+      "first_seen": "2026-08-31",
+      "name": "サンリオキャラクターズ 入浴料付きマスコット水でっぽう（いたずらフレンズ）",
+      "price": 638,
+      "url": "https://shop.sanrio.co.jp/item/detail/1_1_2608872997_1/MX_-/-",
+      "calendar_event_id": null,
+      "from_baseline": true
+    },
+    "1_1_2608495638": {
+      "first_seen": "2026-08-31",
+      "name": "サンリオキャラクターズ ぬいピン サンリオキャラクターズ Part.1",
+      "price": 1100,
+      "url": "https://shop.sanrio.co.jp/item/detail/1_1_2608495638_1/MX_-/-",
+      "calendar_event_id": null,
+      "from_baseline": true
+    },
+    "1_1_2608043443": {
+      "first_seen": "2026-08-31",
+      "name": "サンリオキャラクターズ クリアハードシール",
+      "price": 715,
+      "url": "https://shop.sanrio.co.jp/item/detail/1_1_2608043443_1/MX_GREEN/-",
+      "calendar_event_id": null,
+      "from_baseline": true
+    },
+    "1_1_2609191621": {
+      "first_seen": "2026-09-03",
+      "name": "けろけろけろっぴ ぷっくりシール（レトロ）",
+      "price": 440,
+      "url": "https://shop.sanrio.co.jp/item/detail/1_1_2609191621_1/KR_-/-",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": false
+    },
+    "1_1_2609192082": {
+      "first_seen": "2026-09-03",
+      "name": "けろけろけろっぴ ミニミニデコシール（レトロ）",
+      "price": 440,
+      "url": "https://shop.sanrio.co.jp/item/detail/1_1_2609192082_1/KR_-/-",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": false
+    },
+    "1_1_2609182559": {
+      "first_seen": "2026-09-03",
+      "name": "けろけろけろっぴ スクエアメモ（レトロ）",
+      "price": 462,
+      "url": "https://shop.sanrio.co.jp/item/detail/1_1_2609182559_1/KR_-/-",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": false
+    },
+    "1_1_2609192783": {
+      "first_seen": "2026-09-03",
+      "name": "けろけろけろっぴ サガラ刺繍巾着（レトロ）",
+      "price": 1650,
+      "url": "https://shop.sanrio.co.jp/item/detail/1_1_2609192783_1/KR_-/-",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": false
+    },
+    "1_1_2609915297": {
+      "first_seen": "2026-09-03",
+      "name": "グリーティングカード メッセージチャーム　はぴだんぶい　フレー！フレー！",
+      "price": 880,
+      "url": null,
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": false
+    }
+  },
+  "last_checked": "2026-09-07"
+}

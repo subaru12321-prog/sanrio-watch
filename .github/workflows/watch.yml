@@ -1,0 +1,49 @@
+# サンリオ新商品ウォッチ（クラウド実行）
+# PCの電源が入っていなくても、Claudeが起動していなくても動く経路。
+name: watch
+
+on:
+  schedule:
+    # 00:00 UTC = 09:00 JST（GitHub Actionsの仕様上、数分〜数十分遅れることがある）
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sanrio-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: Asia/Tokyo
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 依存パッケージなし（標準ライブラリのみ）のため pip install は不要
+
+      - name: Run check and push notifications
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python run_check.py --weekly --notify
+
+      - name: Commit state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/
+          # 変更が無ければ何もしない（通常はlast_checkedが毎日変わるのでコミットされる。
+          # 毎日コミットが入ることでリポジトリが「活動中」とみなされ、60日無活動による
+          # スケジュール自動停止も避けられる）
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: update watch state"
+          git pull --rebase --autostash
+          git push

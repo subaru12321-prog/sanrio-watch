@@ -1,0 +1,366 @@
+{
+  "baseline_established": true,
+  "seen": {
+    "192660": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ ぬいぐるみハートメジャー",
+      "price": 1540,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=192660&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "224385": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ ケータイクリーナーストラップ",
+      "price": 880,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=224385&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "200990": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ いちご新聞 50th むにゅぐるみマスコット",
+      "price": 2200,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=200990&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "201881": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ いちご新聞 50th とぅるるんアクリルキーホルダー",
+      "price": 990,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=201881&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "221117": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ いちご新聞バレンタイン むにゅぐるみマスコット",
+      "price": 2200,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=221117&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "222800": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ いちごバルーン むにゅぐるみマスコット",
+      "price": 2090,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=222800&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "211491": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ こっちむいてきゅん マスコット",
+      "price": 1980,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=211491&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "224828": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ こっちむいてきゅんスペシャルセット",
+      "price": 1320,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=224828&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "218858": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ ハッピーパーティー むにゅぐるみマスコット",
+      "price": 2090,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=218858&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "221490": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ ハッピーパーティー アクリルキーホルダー",
+      "price": 880,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=221490&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "221568": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ ハッピーパーティー 缶バッジ",
+      "price": 440,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=221568&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "205636": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴアニマルポンチョむにゅぐるみマスコット",
+      "price": 2420,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=205636&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "217738": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ ミニフェイス巾着",
+      "price": 1980,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=217738&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "217790": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ ダイカットねそべりポーチ",
+      "price": 2200,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=217790&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "211712": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ シンプルキュート アクリルキーホルダー クリアタイプ",
+      "price": 880,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=211712&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "211873": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ シンプルキュート プリントミニ巾着",
+      "price": 990,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=211873&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "211934": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ シンプルキュート　総柄エコバッグ",
+      "price": 1980,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=211934&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "218346": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ シンプルキュート アクリルキーホルダー カラフルタイプ",
+      "price": 880,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=218346&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "209641": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ だいすきっふわキラアクリルチャーム",
+      "price": 440,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=209641&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "209849": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ だいすきっふわキラアクリルクリップバッジ",
+      "price": 990,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=209849&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "198228": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴおすわり巾着サッカー日本代表Ver.",
+      "price": 2530,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=198228&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "195685": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ いつもいっしょのお友だちアクリルスタンド",
+      "price": 880,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=195685&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "195906": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ いつもいっしょのお友だち缶バッジ",
+      "price": 440,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=195906&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "196026": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ いつもいっしょのお友だちステッカー",
+      "price": 275,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=196026&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "164889": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ ダイカットハンドタオル",
+      "price": 770,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=164889&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "192974": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ フラットフェイスポーチ",
+      "price": 1980,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=192974&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "164681": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ Pochacco 35th Anniversary むにゅぐるみマスコット",
+      "price": 1980,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=164681&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "173539": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ ダイカットマチ広エコバッグ",
+      "price": 1980,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=173539&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "166715": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ アクリルスライドミラー",
+      "price": 1100,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=166715&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "134882": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ ダイカットフロアマット",
+      "price": 3190,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=134882&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "119315": {
+      "first_seen": "2026-08-31",
+      "name": "むにゅぐるみS けろけろけろっぴ",
+      "price": 2530,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=119315&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "119551": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ むにゅぐるみマスコット",
+      "price": 1430,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=119551&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "115324": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ ウィアーダイナソアーズ×はぴだんぶい 缶バッジ",
+      "price": 440,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=115324&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "115386": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ ウィアーダイナソアーズ×はぴだんぶい アクリルキーホルダー",
+      "price": 748,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=115386&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "135582": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ寝そべりマスコット",
+      "price": 1100,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=135582&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    },
+    "126108": {
+      "first_seen": "2026-08-31",
+      "name": "けろけろけろっぴ　フェイスマルチポーチ",
+      "price": 1760,
+      "url": "https://munyugurumi.jp/itemdetail?ItemID=126108&sci=11",
+      "calendar_event_id": null,
+      "is_preorder": false,
+      "preorder_date": null,
+      "from_baseline": true
+    }
+  },
+  "last_checked": "2026-09-07"
+}
